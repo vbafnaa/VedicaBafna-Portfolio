@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { Globe } from "./ace-globe";
 import { GlobeDemo } from "./grid-globe";
+import { CardHoverEffectCards } from "./cardHoverCards";
 
 
 export const BentoGrid = ({
@@ -50,7 +51,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento shadow-input relative row-span-1 flex flex-col justify-between space-y-5 m-2 rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+        "group/bento shadow-input relative row-span-1 overflow-hidden flex flex-col justify-between space-y-5 m-2 rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className,
       )}
       style ={{
@@ -82,10 +83,15 @@ export const BentoGridItem = ({
           <div className="lg:text-3xl max-w-96 z-10 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
           {title}
         </div>
-        </div>
           {id === 4 && (
             <GlobeDemo/>
           )}
+          {id===2 && (
+            <div className="flex items-center justify-center  ">
+              <CardHoverEffectCards/>
+            </div>
+          )}
+          </div>
       </div>
       {/* {header} */}
       {/* <div className="transition duration-200 group-hover/bento:translate-x-2">
