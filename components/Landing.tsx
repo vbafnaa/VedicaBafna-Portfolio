@@ -35,18 +35,18 @@ const Landing = () => {
         </div>
 
             {/* <BackgroundBeams className=' z-50000'/> */}
-        <div className="flex justify-center relative my-10 z-10">
-            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="flex relative my-10 z-10">
+            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-ledt justify-center">
 
-            <p className="uppercase tracking-widest text-s text-center text-blue-100 max-w-80">
+            <p className="uppercase tracking-widest text-s text-left text-blue-100 max-w-80">
                 Enter text here
             </p>
             <TextGenerateEffect duration={2} filter={false} 
-                words="Welcome to my Portfolio Glad to see you here Lets learn more about me!"
-                className="text-center text-3xl md:text-5xl lg:text-7xl "
+                words="Welcome to my Portfolio Lets learn more about me!"
+                className="text-left text-3xl md:text-5xl lg:text-7xl "
             />
 
-            <p className="text-center md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl">
+            <p className="text-left md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl">
                 Hi I&apos;m Vedica, a Developer based in India.
             </p>
             <a href='#about'>

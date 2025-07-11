@@ -6,7 +6,7 @@ const MagicButton = ({title, handleClick, otherClasses,position, icon
 }:{title:string; position:string; icon: React.ReactNode; handleClick?: () =>void; otherClasses?:string  }) => {
   return (
 <button
-      className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-3xl p-[1px] focus:outline-none"
+      className="relative inline-flex h-12 w-[90%] max-w-xs md:w-60 min-w-[200px] md:mt-10 overflow-hidden rounded-3xl p-[1px] focus:outline-none"
       onClick={handleClick}
     >
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
