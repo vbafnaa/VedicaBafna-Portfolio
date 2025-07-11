@@ -1,11 +1,13 @@
 export const NavItems = [
     {name:"About", link:"#about"},
     {name:"Projects", link:"#projects"},
+    {name:"Timeline", link:"#timeline"},
     {name:"Research", link:"#research"},
     {name:"Achievements", link:"#achievements"},
-    {name:"Experience", link:"#experience"},
+    // {name:"Experience", link:"#experience"},
     {name:"Volunteering", link:"#volunteering"},
     {name:"FunFacts", link:"#funfacts"},
+    {name:"Contact", link:"#contact"},
 
 ]
 
