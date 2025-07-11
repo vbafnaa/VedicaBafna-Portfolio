@@ -10,6 +10,7 @@ import animationData from '@/data/Confetti.json'
 import MagicButton from "./magicButton";
 import { FaMailchimp } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
+import { DraggableImages } from "./draggableImages";
 
 
 export const BentoGrid = ({
@@ -90,11 +91,17 @@ export const BentoGridItem = ({
               <div className="absolute flex items-center justify-center text-white font-bold z-0"/>
             </BackgroundGradientAnimation>
           )}
+
+          {/* {id===1 && 
+          <div className="flex ">
+            <DraggableImages/>
+          </div>
+          } */}
          
         <div className={cn(
         titleClassName, ` transition duration-200 relative items-center justify-center md:h-full min-h-40 flex flex-col lg:py-10 ${id !== 2 && "px-5"}` )}>
           <div className="group-hover/bento:translate-x-2 font-sans text-sm md:text-xs lg:text-base z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
-          {description}
+          {id !== 1 && description}
           </div>
           <div className="group-hover/bento:translate-x-2 lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
           {title}

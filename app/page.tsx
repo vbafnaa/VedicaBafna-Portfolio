@@ -1,3 +1,5 @@
+import { Achievements } from "@/components/Achievements";
+import { CarouselSlides } from "@/components/CarouselSlides";
 import Grid from "@/components/Grid";
 import Landing from "@/components/Landing";
 import { TimelineComp } from "@/components/Timeline";
@@ -12,9 +14,9 @@ export default function Home() {
         <FloatingNav navItems={[
           {name:'Home', link:'/' ,icon:<FaHome/>},
           {name:'About', link:'#about' ,icon:<FaHome/>},
-          {name:'TimeLine', link:'#timeline' ,icon:<FaHome/>},
+          {name:'Experiences', link:'#timeline' ,icon:<FaHome/>},
           {name:'Projects', link:'#projects' ,icon:<FaHome/>},
-          // {name:'Research', link:'#research' ,icon:<FaHome/>},
+          {name:'Achievements', link:'#achievements' ,icon:<FaHome/>},
           {name:'Volunteering', link:'#volunteering' ,icon:<FaHome/>},
           {name:'FunFacts', link:'#funfacts' ,icon:<FaHome/>},
           {name:'Contact', link:'#contact' ,icon:<FaHome/>},
@@ -25,6 +27,10 @@ export default function Home() {
         <Grid/>
 
         <TimelineComp/>
+
+        <CarouselSlides/>
+
+        <Achievements/>
       </div>
     </main>
   );
