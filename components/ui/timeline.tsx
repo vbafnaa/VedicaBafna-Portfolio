@@ -77,7 +77,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                   className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold transition-colors duration-300"
                   animate={{ color: isInView ? "#ffffff" : "#111111" ,
                     // backgroundColor: isInView? "#000000" : "",
-                    fontSize:"50px",
+                    fontSize:"40px",
                   }}
                   transition={{ duration: 0.3 }}
                 >
@@ -86,9 +86,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
 
               {/* Right side (mobile title + content) */}
-              <div className="relative pl-20 pr-4 md:pl-4 w-full">
+              <div className="relative pl-20 p-6 pr-6 md:pl-6 w-full bg-slate-950 rounded-2xl border-b-4 ">
                 <motion.h3
-                  className="md:hidden block text-2xl mb-4 text-left font-bold transition-colors duration-300"
+                  className="md:hidden block text-lg mb-4 text-left font-bold transition-colors duration-300"
                   animate={{ color: isInView ? "#ffffff" : "#737373" }}
                   transition={{ duration: 0.5 }}
                 >
