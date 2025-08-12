@@ -1,27 +1,76 @@
 "use client";
 
 import { Carousel } from "./ui/carousel";
+import { HiOutlineAcademicCap } from "react-icons/hi2";
+import { FaGithub } from "react-icons/fa";
+
 export function CarouselSlides() {
   const slideData = [
     {
-      title: "Mystic Mountains",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1494806812796-244fe51b774d?q=80&w=3534&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "VERITAS-NLI",
+      button: "Go To Publication  ",
+      button2: "Go To Artifact",
+      src: "assets/VERITASImage.png",
+      icon: <HiOutlineAcademicCap style={{ display: "inline" }}/>,
+      icon2: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://www.sciencedirect.com/science/article/abs/pii/S0952197625002842?via%3Dihub",
+      link2:"https://github.com/vbafnaa/VERITAS-NLI"
+    },
+    // {
+    //   title: "ProductVision - Amazon ML Challenge",
+    //   button: "Explore Component",
+    //   src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //   desc:"enter desc here",
+    //   link: "https://github.com/vbafnaa/Amazon-ML-Challenge",
+    // },
+    {
+      title: "Railway Buddy - Smart India Hackathon",
+      button: "Go To Github  ",
+      src: "assets/RailwayBuddy.png",
+      icon: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://github.com/vbafnaa/SIH1348_LichtDenCode",
     },
     {
-      title: "Urban Dreams",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Stock Watch - Bajaj HackRx",
+      button: "Go To Github  ",
+      src: "assets/StockWatch2.png",
+      icon: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://github.com/vbafnaa/StockWatch-FastAPI",
     },
     {
-      title: "Neon Nights",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Authentica",
+      button: "Go To Github  ",
+      src: "assets/Authentica.jpeg",
+      icon: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://github.com/vbafnaa/LichtDenCode_LOC5.0",
     },
     {
-      title: "Desert Whispers",
-      button: "Explore Component",
-      src: "https://images.unsplash.com/photo-1679420437432-80cfbf88986c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Clinical Sage - Techgium",
+      button: "Go To Github  ",
+      src: "assets/ClinicalSage.jpeg",
+      icon: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://github.com/vbafnaa/ClinicalSage-Techgium",
+    },
+    {
+      title: "Curate Sage - Techgium",
+      button: "Go To Github  ",
+      src: "assets/CurateSage.png",
+      icon: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://github.com/vbafnaa/CurateSage---Techgium",
+    },
+    {
+      title: "Sonify - NASA Space Apps",
+      button: "Go To Github  ",
+      src: "assets/milkywaygif.gif",
+      icon: <FaGithub style={{ display: "inline" }}/>,
+      desc:"enter desc here",
+      link: "https://github.com/vbafnaa/NasaSpaceApps2023",
     },
   ];
   return (

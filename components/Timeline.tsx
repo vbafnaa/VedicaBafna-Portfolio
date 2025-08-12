@@ -1,9 +1,11 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { FaLink } from "react-icons/fa6";
-// import railmadadImge from "@/components/assets/RailMadad.png";
+// import railmadadImge from "../assets/RailMadad.png";
 
 export function TimelineComp() {
+  // const kittenHeader = require('./assets/RailMadad.png');
+
   const data = [
     {
       title: "December 2024 - June 2025",
@@ -22,28 +24,16 @@ export function TimelineComp() {
           <br/><br/> ➜ Generated synthetic complaints via a Markov Chain system to augment underrepresented complaint classes, filling 88% of missing entries; improved dataset coverage by 4.67% and conducted ablation studies to validate tradeoffs in label quality vs. data quantity. 
           <br/><br/> ➜ Exhibited data-centric AI with a NLI-based mislabel detection pipeline to correct manual annotation, increasing accuracy by 18.7%. The entire pipeline is currently being deployed on the RailMadad website.
           </p>
-          {/* <ul>
-            <li className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300">
-               Designed a hierarchical masked LSTM using Tensorflow with dynamic subtype gating via a custom ‘MaskedDense’ layer, enforcing class-conditional output spaces and hierarchical consistency, achieving a 94.92% type and 89.62% subtype classification accuracy on a blind test-set of 100k real-world complaints with millisecond inference times on CPU.
-            </li>
-            <li className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300">
-               Generated synthetic complaints via a Markov Chain system to augment underrepresented complaint classes, filling 88% of missing entries; improved dataset coverage by 4.67% and conducted ablation studies to validate tradeoffs in label quality vs. data quantity. 
-            </li>
-            <li className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300">
-              Exhibited data-centric AI with a NLI-based mislabel detection pipeline to correct manual annotation, increasing accuracy by 18.7%
-             </li>
-          </ul> */}
           
           <div className="grid grid-cols-1 gap-4">
             <a href="https://railmadad.indianrailways.gov.in/madad/final/home.jsp">
             <img
-              src="components\assets\RailMadad.png"
+              src="/assets/RailMadad.png"
               alt="RailMadadWebsiteImage"
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-full w-full mx-auto items-center justify-center rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-full md:w-3/5"
             />
-
             </a>
           </div>
         </div>
@@ -73,7 +63,7 @@ export function TimelineComp() {
               alt="hero template"
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-full w-full mx-auto items-center justify-center rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-full md:w-3/5"
             /> */}
           </div>
         </div>
@@ -99,11 +89,11 @@ export function TimelineComp() {
           </p>
           <div className="grid grid-cols-1 gap-4">
             <img
-              src=""
+              src="/assets/Tesseract-Jio-JioGlass.jpg"
               alt="JIOTesseractImage"
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-full w-full mx-auto items-center justify-center rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-full md:w-3/5"
             />
           </div>
         </div>
@@ -128,14 +118,14 @@ export function TimelineComp() {
           <br/><br/> ➜	Integrated AI-powered caption generation and implemented Redux with Facebook’s Graph API to deliver seamless rendering of posts, likes, comments and engagement statistics hence enabling full-cycle content publishing without switching between applications. Rendered real-time notifications using WebSockets to alert users of new activity, increasing platform engagement and responsiveness.
 interface. 
           </p>
-          <div className="grid grid-cols-1 gap-4">
-            {/* <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
+          <div className="grid grid-cols-1 gap-4 ">
+            <img
+              src="/assets/TanikaTech.png"
+              alt="TanikaTechCertificateOfCompletion"
               width={500}
               height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            /> */}
+              className="h-full w-full mx-auto items-center justify-center rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-full md:w-3/5"
+            />
           </div>
         </div>
       ),
