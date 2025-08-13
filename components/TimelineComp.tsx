@@ -10,7 +10,7 @@ export function TimelineComp() {
         <div>
           <p className="mb-2 text-md text-neutral-800 md:text-3xl dark:text-violet-300 font-bold underline">
             Machine Learning Intern
-          </p>
+          </p> 
           <p className="mb-3 text-md font-normal italic text-neutral-800 md:text-2xl dark:text-neutral-300">
             <a href="https://cris.org.in/">
               Center of Railway Information Systems - Ministry of Railways, Government of India{" "}
