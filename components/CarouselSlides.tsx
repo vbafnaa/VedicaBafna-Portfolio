@@ -76,7 +76,7 @@ export function CarouselSlides() {
   return (
     <section id="projects">
         <div className="relative flex flex-col overflow-hidden w-full h-full py-20">
-            <h1 className="flex m-10 text-2xl font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl">Projects and Research</h1>
+            <h1 className="flex m-10 text-3xl text-center font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl">Projects and Research</h1>
             <Carousel slides={slideData} />
         </div>
 

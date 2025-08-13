@@ -3,45 +3,94 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 export function Achievements() {
   const testimonials = [
     {
-      quote:
-        "",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name:
+        "All India Rank 4 Amazon ML Challenge",
+      designation: "2024",
+      quote:"",
+      src: "assets/AmazonMLChallenge.png",
     },
     {
-      quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name:
+        "Winner of Smart India Hackathon ",
+      designation: "2023",
+      quote: "",
+      src: "assets/SIH2023WINNER.jpeg",
     },
     {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name:
+        "Rank 1 Nation-wide Bajaj HackRx 4.0",
+      designation: "2023",
+      quote: "",
+      src: "assets/BajajHackrx4WINNER.jpeg",
     },
     {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name:
+        "11th Position Internationally European Rover Challenge-Onsite Edition",
+      designation: "2024",
+      quote: "",
+      src: "assets/ERC.jpg",
     },
     {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name:
+        "2nd Position Internationally European Rover Challenge - Remote Edition",
+      designation: "2023",
+      quote: "",
+      src: "assets/ERC2023Remote.jpeg",
+    },
+    {
+      name:
+        "Placed 3rd at the International Rover Challenge",
+      designation: "2024",
+      quote: "",
+      src: "assets/IRC20243rd.jpg",
+    },
+    {
+      name:
+        "Placed 2nd at the International Spcae Drone Challenge",
+      designation: "2024",
+      quote: "",
+      src: "assets/ISDC2nd.jpeg",
+    },
+    {
+      name:
+        "Top 10 Female Student Leaders in India & Top 80 Unstoppable E-School Leaders",
+      designation: "2024",
+      quote: "",
+      src: "assets/Unstop.png",
+    },
+    {
+      name:
+        "Placed 2nd in the Lines of Code 5.0 Hackathon",
+      designation: "2023",
+      quote: "",
+      src: "assets/2ndLOC5.jpeg",
+    },
+    {
+      name:
+        "Team Manager - DJS Antariksh",
+      designation: "October 2023 - October 2024",
+      quote: "",
+      src: "assets/TeamManagerDJSA.png",
+    },
+    {
+      name:
+        "Co-founder and Research Executive - DJS Nova",
+      designation: "May 2023 - June 2024",
+      quote: "",
+      src: "assets/ResearchExecutiveNova.png",
+    },
+    {
+      name:
+        "Head of Creatives Department - DJS Express",
+      designation: "February 2023 - February 2024",
+      quote: "",
+      src: "assets/HODCreativesExpress.jpeg",
     },
   ];
   return(
     <section id="achievements">
-          <h1 className="flex m-10 text-2xl font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl">Achievements and Leadership</h1>
-        <AnimatedTestimonials testimonials={testimonials} />;
+          <h1 className="flex m-10 text-3xl text-center font-bold md:text-5xl mb-4 text-black dark:text-white max-w-4xl">Achievements and Leadership</h1>
+        <AnimatedTestimonials testimonials={testimonials} />
 
     </section>
 

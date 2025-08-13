@@ -5,8 +5,8 @@ export const NavItems = [
     {name:"Research", link:"#research"},
     {name:"Achievements", link:"#achievements"},
     // {name:"Experience", link:"#experience"},
-    {name:"Volunteering", link:"#volunteering"},
-    {name:"FunFacts", link:"#funfacts"},
+    // {name:"Volunteering", link:"#volunteering"},
+    // {name:"FunFacts", link:"#funfacts"},
     {name:"Contact", link:"#contact"},
 
 ]
@@ -21,8 +21,8 @@ export const gridItems = [
 ]
 
 export const projects = [
-    {id:1, title:"project 1", description:"desc 1", image:"", iconLists:"", link:""},
-    {id:1, title:"project 1", description:"desc 1", image:"", iconLists:"", link:""},
-    {id:1, title:"project 1", description:"desc 1", image:"", iconLists:"", link:""},
+    {id:1, title:"project 1", description:"desc 1", image:"", iconLists:"", link:"a"},
+    {id:2, title:"project 1", description:"desc 1", image:"", iconLists:"", link:"b"},
+    {id:3, title:"project 1", description:"desc 1", image:"", iconLists:"", link:"c"},
 
 ]

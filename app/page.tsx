@@ -1,5 +1,6 @@
 import { Achievements } from "@/components/Achievements";
 import { CarouselSlides } from "@/components/CarouselSlides";
+import { Footer } from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Landing from "@/components/Landing";
 import { TimelineComp } from "@/components/Timeline";
@@ -20,6 +21,7 @@ export default function Home() {
           {name:'Volunteering', link:'#volunteering' ,icon:<FaHome/>},
           {name:'FunFacts', link:'#funfacts' ,icon:<FaHome/>},
           {name:'Contact', link:'#contact' ,icon:<FaHome/>},
+
           
         ]}/>
         <Landing/>
@@ -31,6 +33,8 @@ export default function Home() {
         <CarouselSlides/>
 
         <Achievements/>
+
+        <Footer/>
       </div>
     </main>
   );
