@@ -3,7 +3,7 @@ import { CarouselSlides } from "@/components/CarouselSlides";
 import { Footer } from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Landing from "@/components/Landing";
-import { TimelineComp } from "@/components/Timeline";
+import { TimelineComp } from "@/components/TimelineComp";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import {FaHome} from "react-icons/fa"
 

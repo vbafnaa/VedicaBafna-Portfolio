@@ -48,7 +48,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => {
-          const itemRef = useRef(null);
+          // Explicitly type the ref so TS knows it's a div element
+          const itemRef = useRef<HTMLDivElement>(null);
           const isInView = useInView(itemRef, {
             margin: "-20% 0px -50% 0px",
             once: false,
@@ -62,22 +63,30 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             >
               {/* Left side (sticky circle and title on desktop) */}
               <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full mt-5">
-                <motion.div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-blue-200 flex items-center justify-center md:duration-500 duration-150"
-                animate={{backgroundColor:isInView?"oklch(0.623 0.214 259.815)":"black"}}
-                                  transition={{ duration: 0.5 }}
->
-                
-                  <motion.div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2 md:duration-500 duration-150"
-                  animate={{backgroundColor:isInView?"oklch(0.882 0.059 254.128)":"black"}}
-                                  transition={{ duration: 1 }} />
-                
-
+                <motion.div
+                  className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-blue-200 flex items-center justify-center md:duration-500 duration-150"
+                  animate={{
+                    backgroundColor: isInView
+                      ? "oklch(0.623 0.214 259.815)"
+                      : "black",
+                  }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <motion.div
+                    className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2 md:duration-500 duration-150"
+                    animate={{
+                      backgroundColor: isInView
+                        ? "oklch(0.882 0.059 254.128)"
+                        : "black",
+                    }}
+                    transition={{ duration: 1 }}
+                  />
                 </motion.div>
                 <motion.h3
                   className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold transition-colors duration-300"
-                  animate={{ color: isInView ? "#ffffff" : "#111111" ,
-                    // backgroundColor: isInView? "#000000" : "",
-                    fontSize:"40px",
+                  animate={{
+                    color: isInView ? "#ffffff" : "#111111",
+                    fontSize: "40px",
                   }}
                   transition={{ duration: 0.3 }}
                 >
@@ -86,7 +95,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
 
               {/* Right side (mobile title + content) */}
-              <div className="relative pl-20 p-6 pr-6 md:pl-6 w-full bg-slate-950 rounded-2xl border-b-4 ">
+              <div className="relative pl-20 p-6 pr-6 md:pl-6 w-full bg-slate-950 rounded-2xl border-b-4">
                 <motion.h3
                   className="md:hidden block text-lg mb-4 text-left font-bold transition-colors duration-300"
                   animate={{ color: isInView ? "#ffffff" : "#737373" }}
@@ -103,7 +112,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {/* Animated vertical line */}
         <div
           style={{
-            height: height + "px",
+            height: `${height}px`,
           }}
           className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >

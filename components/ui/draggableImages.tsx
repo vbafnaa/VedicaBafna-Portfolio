@@ -55,7 +55,7 @@ export function DraggableImages() {
         If its your first day at Fight Club, you have to fight.
       </p>
       {items.map((item) => (
-        <DraggableCardBody className={item.className}>
+        <DraggableCardBody key={item.title} className={item.className}>
           <img
             src={item.image}
             alt={item.title}

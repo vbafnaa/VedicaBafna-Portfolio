@@ -5,7 +5,8 @@ import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { GlobeDemo } from "./grid-globe";
 import { CardHoverEffectCards } from "./cardHoverCards";
 import { useState } from "react";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie"
+import Lottie from "lottie-react";
 import animationData from '@/data/Confetti.json'
 import MagicButton from "./magicButton";
 // import { FaMailchimp } from "react-icons/fa";
@@ -37,8 +38,8 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
-  icon,
+  // header,
+  // icon,
   id,
   img,
   // key, 
@@ -60,9 +61,9 @@ export const BentoGridItem = ({
   const handleCopy =() => {
     navigator.clipboard.writeText('vedicabafna@gmail.com');
     setCopied(true);
-    // setTimeout(() => {
-    //   setCopied(false)
-    // }, 4000);
+    setTimeout(() => {
+      setCopied(false)
+    }, 3000);
   }
   return (
     <div
@@ -119,14 +120,17 @@ export const BentoGridItem = ({
            {id === 3 && (
             <div className="relative mt-5 "> 
               <div className={`absolute -bottom-8 -right-25 md:-bottom-15 md:-right-30`}>
-                <Lottie options={{
+                {/* <Lottie options={{
                   loop:copied,
                   autoplay:copied,
                   animationData,
                   rendererSettings:{
                     preserveAspectRatio:"XMidYMid slice",
                   }
-                }}/>
+                    
+                }}/> */}
+
+                <Lottie animationData={animationData} loop={copied} autoplay={copied}  />;
               
               <MagicButton 
                   title={copied? "Email Copied!": "Copy my Email"} 
