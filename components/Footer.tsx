@@ -26,22 +26,22 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="https://www.linkedin.com/in/vedica-bafna-53a662231/" className="hover:underline me-4 md:me-6">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="https://github.com/vbafnaa" className="hover:underline me-4 md:me-6">
                 GitHub
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="hover:underline me-4 md:me-6">
                 PortFolio
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="https://scholar.google.com/citations?user=5KRc-xMAAAAJ&hl=en" className="hover:underline me-4 md:me-6">
                 Google Scholar
               </a>
             </li>

@@ -1,16 +1,16 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import { Globe } from "./ace-globe";
+// import { Globe } from "./ace-globe";
 import { GlobeDemo } from "./grid-globe";
 import { CardHoverEffectCards } from "./cardHoverCards";
 import { useState } from "react";
 import Lottie from "react-lottie";
 import animationData from '@/data/Confetti.json'
 import MagicButton from "./magicButton";
-import { FaMailchimp } from "react-icons/fa";
+// import { FaMailchimp } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
-import { DraggableImages } from "./draggableImages";
+// import { DraggableImages } from "./draggableImages";
 
 
 export const BentoGrid = ({

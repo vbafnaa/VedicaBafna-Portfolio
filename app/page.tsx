@@ -5,7 +5,6 @@ import Grid from "@/components/Grid";
 import Landing from "@/components/Landing";
 import { TimelineComp } from "@/components/Timeline";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import Image from "next/image";
 import {FaHome} from "react-icons/fa"
 
 export default function Home() {

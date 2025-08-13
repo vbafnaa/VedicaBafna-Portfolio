@@ -2,12 +2,12 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
-import { SpotlightNew } from './ui/spotlight-new'
+// import { SpotlightNew } from './ui/spotlight-new'
 import MagicButton from './ui/magicButton'
 import Threemodel from './ui/Threemodel'
-import { FloatingNav } from './ui/floating-navbar'
+// import { FloatingNav } from './ui/floating-navbar'
 import { FaLocationArrow } from 'react-icons/fa'
-import { BackgroundBeams } from './ui/background-beams'
+// import { BackgroundBeams } from './ui/background-beams'
 
 
 const Landing = () => {
@@ -39,18 +39,18 @@ const Landing = () => {
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-ledt justify-center">
 
             <p className="uppercase tracking-widest text-s text-left text-blue-100 max-w-80">
-                Enter text here
+                Nice to see you here!
             </p>
             <TextGenerateEffect duration={2} filter={false} 
-                words="Welcome to my Portfolio Lets learn more about me!"
+                words="Welcome to My Portfolio Lets learn more about me!"
                 className="text-left text-3xl md:text-5xl lg:text-7xl "
             />
 
             <p className="text-left md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl">
-                Hi I&apos;m Vedica, a Developer based in India.
+                Hi I&apos;m Vedica, a Computer Engineer pursuing my Masters in Information Management.
             </p>
             <a href='#about'>
-                <MagicButton title="Take me to ..." 
+                <MagicButton title="Got to my Resume" 
                 icon= {<FaLocationArrow/> }
                 position = "right" />
 
