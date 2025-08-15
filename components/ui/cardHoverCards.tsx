@@ -93,43 +93,43 @@ export const projects = [
     link: "",
   },
   {
-    title: "Google",
+    title: "Word",
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
     link: "",
   },
   {
-    title: "Meta",
+    title: "Excel",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
     link: "",
   },
   {
-    title: "Amazon",
+    title: "Tableau",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
     link: "",
   },
   {
-    title: "Microsoft",
+    title: "PoweBI",
     description:
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
     link: "",
   },
     {
-    title: "Google",
+    title: "Selenium",
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
     link: "",
   },
   {
-    title: "Meta",
+    title: "BS4",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
     link: "",
   },
   {
-    title: "Amazon",
+    title: "MongoDB,",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
     link: "",

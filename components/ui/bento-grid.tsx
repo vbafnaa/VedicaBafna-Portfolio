@@ -107,6 +107,12 @@ export const BentoGridItem = ({
           <div className="group-hover/bento:translate-x-2 lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
           {title}
         </div>
+        { id == 1 &&  (
+          <div className="group-hover/bento:translate-x-2 text-center p-7 font-sans text-sm md:text-xl z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
+          {description}
+          </div>
+        )
+        } 
           {id === 4 && (
             <GlobeDemo/>
           )}
@@ -130,7 +136,7 @@ export const BentoGridItem = ({
                     
                 }}/> */}
 
-                <Lottie animationData={animationData} loop={copied} autoplay={copied}  />;
+                <Lottie animationData={animationData} loop={copied} autoplay={copied}  />
               
               <MagicButton 
                   title={copied? "Email Copied!": "Copy my Email"} 

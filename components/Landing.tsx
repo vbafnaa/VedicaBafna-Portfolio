@@ -42,14 +42,14 @@ const Landing = () => {
                 Nice to see you here!
             </p>
             <TextGenerateEffect duration={2} filter={false} 
-                words="Welcome to My Portfolio Lets learn more about me!"
+                words="Welcome to Vedica's Portfolio Lets learn more about me!"
                 className="text-left text-3xl md:text-5xl lg:text-7xl "
             />
 
             <p className="text-left md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl">
-                Hi I&apos;m Vedica, a Computer Engineer pursuing my Masters in Information Management.
+                Hi I&apos;m Vedica Bafna, a Computer Engineer pursuing my Masters in Information Management.
             </p>
-            <a href='#about'>
+            <a href='https://drive.google.com/file/d/1xHZdp95MN0E79-iO23534kh-NrCC7jSn/view'>
                 <MagicButton title="Got to my Resume" 
                 icon= {<FaLocationArrow/> }
                 position = "right" />
