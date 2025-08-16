@@ -129,7 +129,7 @@ export const projects = [
     link: "",
   },
   {
-    title: "MongoDB,",
+    title: "MongoDB",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
     link: "",

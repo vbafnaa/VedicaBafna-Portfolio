@@ -86,7 +86,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         >
         
             <div className="flex bg-slate-800 z-50 items-center justify-center p-4 ">
-                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold font-serif">
+                <h2 className="text-lg md:text-2xl lg:text-4xl font-bold">
                   {title}
                 </h2>
       

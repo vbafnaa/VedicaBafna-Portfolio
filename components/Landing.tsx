@@ -50,7 +50,7 @@ const Landing = () => {
                 Hi I&apos;m Vedica Bafna, a Computer Engineer pursuing my Masters in Information Management.
             </p>
             <a href='https://drive.google.com/file/d/1xHZdp95MN0E79-iO23534kh-NrCC7jSn/view'>
-                <MagicButton title="Got to my Resume" 
+                <MagicButton title="Go to my Resume" 
                 icon= {<FaLocationArrow/> }
                 position = "right" />
 
