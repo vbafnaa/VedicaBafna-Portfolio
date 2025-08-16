@@ -49,10 +49,11 @@ const Landing = () => {
             <p className="text-left md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl">
                 Hi I&apos;m Vedica Bafna, a Computer Engineer pursuing my Masters in Information Management.
             </p>
-            <a href='https://drive.google.com/file/d/1xHZdp95MN0E79-iO23534kh-NrCC7jSn/view'>
+            <a href='https://drive.google.com/file/d/1xHZdp95MN0E79-iO23534kh-NrCC7jSn/view' target="_blank">
                 <MagicButton title="Go to my Resume" 
                 icon= {<FaLocationArrow/> }
-                position = "right" />
+                position = "right" 
+                 />
 
             </a>
         
