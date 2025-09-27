@@ -17,9 +17,9 @@ export default function Home() {
           {name:'Experiences', link:'#timeline' ,icon:<FaHome/>},
           {name:'Projects', link:'#projects' ,icon:<FaHome/>},
           {name:'Achievements', link:'#achievements' ,icon:<FaHome/>},
-          {name:'Volunteering', link:'#volunteering' ,icon:<FaHome/>},
-          {name:'FunFacts', link:'#funfacts' ,icon:<FaHome/>},
-          {name:'Contact', link:'#contact' ,icon:<FaHome/>},
+          // {name:'Volunteering', link:'#volunteering' ,icon:<FaHome/>},
+          // {name:'FunFacts', link:'#funfacts' ,icon:<FaHome/>},
+          // {name:'Contact', link:'#contact' ,icon:<FaHome/>},
 
           
         ]}/>

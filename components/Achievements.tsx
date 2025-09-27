@@ -21,7 +21,7 @@ export function Achievements() {
         "Rank 1 Nation-wide Bajaj HackRx 4.0",
       designation: "2023",
       quote: "",
-      src: "assets/BajajHackrx4WINNER.jpeg",
+      src: "assets/BajajHackRx4WINNER.jpeg", 
     },
     {
       name:
