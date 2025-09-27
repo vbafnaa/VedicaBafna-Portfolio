@@ -28,7 +28,7 @@ export function Achievements() {
         "11th Position Internationally European Rover Challenge-Onsite Edition",
       designation: "2024",
       quote: "",
-      src: "assets/ERC.jpg",
+      src: "assets/ERC.png",
     },
     {
       name:
@@ -42,7 +42,7 @@ export function Achievements() {
         "Placed 3rd at the International Rover Challenge",
       designation: "2024",
       quote: "",
-      src: "assets/IRC20243rd.jpg",
+      src: "assets/IRC20243rd.JPG",
     },
     {
       name:
