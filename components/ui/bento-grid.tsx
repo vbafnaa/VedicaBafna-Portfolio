@@ -11,7 +11,7 @@ import animationData from '@/data/Confetti.json'
 import MagicButton from "./magicButton";
 // import { FaMailchimp } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
-// import { DraggableImages } from "./draggableImages";
+import { DraggableImages } from "./draggableImages";
 
 
 export const BentoGrid = ({
@@ -99,16 +99,29 @@ export const BentoGridItem = ({
           </div>
           } */}
          
+      
+         
         <div className={cn(
         titleClassName, ` transition duration-200 relative items-center justify-center md:h-full min-h-40 flex flex-col lg:py-10 ${id !== 2 && "px-5"}` )}>
           <div className="group-hover/bento:translate-x-2 font-sans text-sm md:text-xs lg:text-base z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
           {id !== 1 && description}
           </div>
-          <div className="group-hover/bento:translate-x-2 lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
+            {/* {id===1 && 
+          <div className="group-hover/bento:translate flex w-50 ">
+            <img src="assets\MyImage.jpeg" alt=" ">
+            </img>
+          </div>
+          } */}
+              {id===1 && 
+          <div className="flex z-100">
+            <DraggableImages/>
+          </div>
+          }
+          <div className="group-hover/bento:translate-x-2 flex lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
           {title}
         </div>
         { id == 1 &&  (
-          <div className="group-hover/bento:translate-x-2 text-center p-7 font-sans text-sm md:text-xl z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
+          <div className="group-hover/bento:translate-x-2 flex text-center p-7 font-sans text-sm md:text-xl z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
           {description}
           </div>
         )

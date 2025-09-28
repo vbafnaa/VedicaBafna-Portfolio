@@ -5,7 +5,11 @@ import Grid from "@/components/Grid";
 import Landing from "@/components/Landing";
 import { TimelineComp } from "@/components/TimelineComp";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import {FaHome} from "react-icons/fa"
+import {FaHome} from "react-icons/fa";
+import { BsPersonRaisedHand } from "react-icons/bs";
+import { FaBriefcase } from "react-icons/fa";
+import { MdOutlineRocketLaunch } from "react-icons/md";
+import { HiTrophy } from "react-icons/hi2";
 
 export default function Home() {
   return (
@@ -13,10 +17,10 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={[
           {name:'Home', link:'/' ,icon:<FaHome/>},
-          {name:'About', link:'#about' ,icon:<FaHome/>},
-          {name:'Experiences', link:'#timeline' ,icon:<FaHome/>},
-          {name:'Projects', link:'#projects' ,icon:<FaHome/>},
-          {name:'Achievements', link:'#achievements' ,icon:<FaHome/>},
+          {name:'About', link:'#about' ,icon:<BsPersonRaisedHand/>},
+          {name:'Experiences', link:'#timeline' ,icon:<FaBriefcase/>},
+          {name:'Projects', link:'#projects' ,icon:<MdOutlineRocketLaunch/>},
+          {name:'Achievements', link:'#achievements' ,icon:<HiTrophy/>},
           // {name:'Volunteering', link:'#volunteering' ,icon:<FaHome/>},
           // {name:'FunFacts', link:'#funfacts' ,icon:<FaHome/>},
           // {name:'Contact', link:'#contact' ,icon:<FaHome/>},
