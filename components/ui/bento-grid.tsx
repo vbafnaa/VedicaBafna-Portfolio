@@ -106,6 +106,9 @@ export const BentoGridItem = ({
           <div className="group-hover/bento:translate-x-2 font-sans text-sm md:text-xs lg:text-base z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
           {id !== 1 && description}
           </div>
+          <div className="group-hover/bento:translate-x-2 flex lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
+          {title}
+        </div>
             {/* {id===1 && 
           <div className="group-hover/bento:translate flex w-50 ">
             <img src="assets\MyImage.jpeg" alt=" ">
@@ -113,13 +116,11 @@ export const BentoGridItem = ({
           </div>
           } */}
               {id===1 && 
-          <div className="flex z-100">
+          <div className="flex z-100 m-5">
             <DraggableImages/>
           </div>
           }
-          <div className="group-hover/bento:translate-x-2 flex lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
-          {title}
-        </div>
+          
         { id == 1 &&  (
           <div className="group-hover/bento:translate-x-2 flex text-center p-7 font-sans text-sm md:text-xl z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
           {description}
@@ -161,6 +162,26 @@ export const BentoGridItem = ({
               </div>
             </div>
 
+          )}
+
+          {id==5 && (
+            <div className="group-hover/bento:translate-x-2 flex flex-col relative mt-2 md:flex-row justify-end items-stretch w-full">
+              <div className="group-hover/bento:translate-x-2 flex border-2 flex-col md:flex-row border-slate-600 m-3 p-2 items-center justify-center relative w-full rounded-3xl">
+              <img className="h-30 w-30 mr-3 mt-1 flex" src="assets/DJSCE_Logo.png">
+              </img>
+              <p className="flex-col flex">
+               <b> University of Mumbai - Dwarkadas J Sanghvi College of Engineering, Mumbai, India </b> <br/> <i> Bachelors of Technology in Computer Engineering with Honors in Intelligent Computing </i> <br/> December 2021 - June 2025
+              </p>
+
+              </div>
+              <div className="group-hover/bento:translate-x-2 flex border-2  flex-col md:flex-row border-slate-600 m-3 p-2 items-center justify-center relative w-full rounded-3xl">
+              <img className="h-30 w-40 mr-3 mt-1 flex" src="assets/WashingtonLogo.png">
+              </img>
+              <p className="flex-col flex">
+               <b> University of Washington, Seattle, United States</b> <br/> <i> Masters of Science in Information Management </i> <br/> September 2025 - June 2027
+              </p>
+              </div>
+            </div>
           )}
           </div>
       </div>
