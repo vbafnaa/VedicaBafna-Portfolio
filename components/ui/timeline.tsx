@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion, useInView } from "framer-motion";
+import { useTheme } from "next-themes";
 
 interface TimelineEntry {
   title: string;
@@ -14,6 +15,8 @@ interface TimelineItemProps {
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ title, content }) => {
   const itemRef = useRef<HTMLDivElement>(null);
+  const { resolvedTheme } = useTheme();
+  const isLight = resolvedTheme === "light";
   const isInView = useInView(itemRef, {
     margin: "-20% 0px -50% 0px",
     once: false,
@@ -48,7 +51,13 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, content }) => {
         <motion.h3
           className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold transition-colors duration-300"
           animate={{
-            color: isInView ? "#ffffff" : "#111111",
+            color: isLight
+              ? isInView
+                ? "#0f172a"
+                : "#64748b"
+              : isInView
+                ? "#ffffff"
+                : "#111111",
             fontSize: "40px",
           }}
           transition={{ duration: 0.3 }}
@@ -58,10 +67,18 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ title, content }) => {
       </div>
 
       {/* Right side */}
-      <div className="relative pl-20 p-6 pr-6 md:pl-6 w-full bg-slate-950 rounded-2xl border-b-4 ">
+      <div className="relative w-full rounded-2xl border-b-4 bg-slate-100 p-6 pl-20 pr-6 md:pl-6 dark:bg-slate-950">
         <motion.h3
-          className="md:hidden block text-lg mb-4 text-left font-bold transition-colors duration-300"
-          animate={{ color: isInView ? "#ffffff" : "#737373" }}
+          className="mb-4 block text-left text-lg font-bold transition-colors duration-300 md:hidden"
+          animate={{
+            color: isLight
+              ? isInView
+                ? "#0f172a"
+                : "#64748b"
+              : isInView
+                ? "#ffffff"
+                : "#737373",
+          }}
           transition={{ duration: 0.5 }}
         >
           {title}

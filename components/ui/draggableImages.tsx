@@ -52,7 +52,7 @@ export function DraggableImages() {
   ];
   return (
     <DraggableCardContainer className="relative flex min-h-[30vh] min-w-[70vw] lg::min-h-[60vh] lg:min-w-[40vw] mb-10 h-full w-full items-center justify-center overflow-clip">
-      <p className=" mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
+      <p className=" mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-500 md:text-4xl dark:text-neutral-100">
         Thats Me!
       </p>
       {items.map((item) => (

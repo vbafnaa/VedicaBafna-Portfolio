@@ -25,7 +25,7 @@ const Landing = () => {
             <Spotlight className='top-28 left-80 h-[80vh] w-[50vh]' fill='indigo'/>
             {/* <SpotlightNew /> */}
         </div>
-        <div className="h-screen w-full dark:bg-slate-900 bg-slate-200 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] absolute top-0 left-0 flex items-center justify-center" >
+        <div className="h-screen w-full bg-slate-50 dark:bg-slate-900 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] absolute top-0 left-0 flex items-center justify-center" >
             {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-slate-900 bg-slate-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"> </div> */}
         </div>
 
@@ -38,7 +38,7 @@ const Landing = () => {
         <div className="flex relative my-10 z-10">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-ledt justify-center">
 
-            <p className="uppercase tracking-widest text-s text-left text-blue-100 max-w-80">
+            <p className="uppercase tracking-widest text-s text-left text-indigo-800 dark:text-blue-100 max-w-80">
                 Nice to see you here!
             </p>
             <TextGenerateEffect duration={2} filter={false} 
@@ -46,7 +46,7 @@ const Landing = () => {
                 className="text-left text-3xl md:text-5xl lg:text-7xl "
             />
 
-            <p className="text-left md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl">
+            <p className="text-left md:tracking-wider mb-4 text-xl md:text-xl lg:text-3xl text-slate-800 dark:text-slate-100">
                 Hi I&apos;m Vedica Bafna, a Computer Engineer pursuing my Masters in Information Management at the University of Washington.
             </p>
             <a href='https://drive.google.com/drive/folders/17EJSE-gVuJ5EMTYMbY_1n7-8AgLPwVBd?usp=drive_link' target="_blank">

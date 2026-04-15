@@ -71,10 +71,7 @@ export const BentoGridItem = ({
         "group/bento shadow-input relative row-span-1 overflow-hidden flex flex-col justify-between space-y-5 m-2 rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className,
       )}
-      style ={{
-        background:'rgb(4,7,29)',
-        backgroundColor:"gradient..."
-      }}
+      style={id === 3 ? { background: "rgb(4, 7, 29)" } : undefined}
     >
       <div className={`${id === 3 && 'flex justify-center'} h-full`}>
       {/* <div className="flex justify-center items-center"> */}
@@ -103,12 +100,24 @@ export const BentoGridItem = ({
          
         <div className={cn(
         titleClassName, ` transition duration-200 relative items-center justify-center md:h-full min-h-40 flex flex-col lg:py-10 ${id !== 2 && "px-5"}` )}>
-          <div className="group-hover/bento:translate-x-2 font-sans text-sm md:text-xs lg:text-base z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
-          {id !== 1 && description}
+          <div
+            className={cn(
+              "group-hover/bento:translate-x-2 z-20 font-sans text-sm font-normal md:text-xs lg:text-base dark:font-extralight dark:text-[#c1c2d3]",
+              id === 3
+                ? "text-neutral-200"
+                : "text-slate-700",
+            )}
+          >
+            {id !== 1 && description}
           </div>
-          <div className="group-hover/bento:translate-x-2 flex lg:text-3xl max-w-96 z-20 font-sans font-bold text-lg text-neutral-600 dark:text-neutral-200">
-          {title}
-        </div>
+          <div
+            className={cn(
+              "group-hover/bento:translate-x-2 z-20 flex max-w-96 font-sans text-lg font-bold lg:text-3xl dark:text-neutral-200",
+              id === 3 ? "text-white" : "text-slate-900",
+            )}
+          >
+            {title}
+          </div>
             {/* {id===1 && 
           <div className="group-hover/bento:translate flex w-50 ">
             <img src="assets\MyImage.jpeg" alt=" ">
@@ -122,7 +131,7 @@ export const BentoGridItem = ({
           }
           
         { id == 1 &&  (
-          <div className="group-hover/bento:translate-x-2 flex text-center p-7 font-sans text-sm md:text-xl z-20 font-extralight text-neutral-600 dark:text-[#c1c2d3] ">
+          <div className="group-hover/bento:translate-x-2 z-20 flex p-7 text-center font-sans text-sm font-normal text-slate-700 dark:font-extralight md:text-xl dark:text-[#c1c2d3]">
           {description}
           </div>
         )
@@ -169,16 +178,16 @@ export const BentoGridItem = ({
               <div className="group-hover/bento:translate-x-2 flex border-2 flex-col md:flex-row border-slate-600 m-3 p-2 items-center justify-center relative w-full rounded-3xl">
               <img className="h-30 w-30 mr-3 mt-1 flex" src="assets/DJSCE_Logo.png">
               </img>
-              <p className="flex-col flex">
-               <b> University of Mumbai - Dwarkadas J Sanghvi College of Engineering, Mumbai, India </b> <br/> <i> Bachelors of Technology in Computer Engineering with Honors in Intelligent Computing </i> <br/> December 2021 - June 2025
+              <p className="flex min-w-0 flex-col text-sm leading-relaxed text-slate-900 dark:text-slate-100">
+               <b> University of Mumbai - Dwarkadas J Sanghvi College of Engineering, Mumbai, India </b> <br/> <i className="text-slate-700 dark:text-slate-300"> Bachelors of Technology in Computer Engineering with Honors in Intelligent Computing </i> <br/> <span className="text-slate-600 dark:text-slate-300">December 2021 - June 2025</span>
               </p>
 
               </div>
               <div className="group-hover/bento:translate-x-2 flex border-2  flex-col md:flex-row border-slate-600 m-3 p-2 items-center justify-center relative w-full rounded-3xl">
               <img className="h-30 w-40 mr-3 mt-1 flex" src="assets/WashingtonLogo.png">
               </img>
-              <p className="flex-col flex">
-               <b> University of Washington, Seattle, United States</b> <br/> <i> Masters of Science in Information Management </i> <br/> September 2025 - June 2027
+              <p className="flex min-w-0 flex-col text-sm leading-relaxed text-slate-900 dark:text-slate-100">
+               <b> University of Washington, Information School, Seattle, United States</b> <br/> <i className="text-slate-700 dark:text-slate-300"> Masters of Science in Information Management </i> <br/> <span className="text-slate-600 dark:text-slate-300">September 2025 - June 2027</span>
               </p>
               </div>
             </div>

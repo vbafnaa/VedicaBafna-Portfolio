@@ -5,19 +5,49 @@ import { FaLink } from "react-icons/fa6";
 export function TimelineComp() {
   const data = [
     {
+      title: "May 2026 - Present",
+      content: (
+        <div>
+          <p className="mb-2 text-md font-bold text-slate-800 underline md:text-3xl dark:text-violet-300">
+            Data Science Intern
+          </p> 
+          <p className="mb-3 text-md font-normal italic text-slate-700 md:text-2xl dark:text-neutral-300">
+            <a href="https://it.uw.edu/">
+              Universtiy of Washington - Information Technology ( Reporting and Analytics )
+              <FaLink style={{ display: "inline" }} />
+            </a>
+          </p>
+          <p className="mb-8 text-justify text-sm font-normal text-slate-600 md:text-sm dark:text-neutral-300">
+            ➜ Incoming Data Science intern at the UW-IT Reporting and Analytics team, supporting learning analytics through data exploration, ML modeling, and visualization to generate insights for student success and institutional decision-making. 
+          </p>
+          {/* <div className="grid grid-cols-1 gap-4">
+            <a href="https://railmadad.indianrailways.gov.in/madad/final/home.jsp">
+              <img
+                src="/assets/RailMadad.png"
+                alt="RailMadadWebsiteImage"
+                width={500}
+                height={500}
+                className="h-full w-full mx-auto rounded-lg object-cover shadow-lg md:h-full md:w-3/5"
+              />
+            </a>
+          </div> */}
+        </div>
+      ),
+    },
+    {
       title: "December 2024 - June 2025",
       content: (
         <div>
-          <p className="mb-2 text-md text-neutral-800 md:text-3xl dark:text-violet-300 font-bold underline">
+          <p className="mb-2 text-md font-bold text-slate-800 underline md:text-3xl dark:text-violet-300">
             Machine Learning Intern
           </p> 
-          <p className="mb-3 text-md font-normal italic text-neutral-800 md:text-2xl dark:text-neutral-300">
+          <p className="mb-3 text-md font-normal italic text-slate-700 md:text-2xl dark:text-neutral-300">
             <a href="https://cris.org.in/">
               Center of Railway Information Systems - Ministry of Railways, Government of India{" "}
               <FaLink style={{ display: "inline" }} />
             </a>
           </p>
-          <p className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300 text-justify">
+          <p className="mb-8 text-justify text-sm font-normal text-slate-600 md:text-sm dark:text-neutral-300">
             ➜ Designed a hierarchical masked LSTM using Tensorflow with dynamic subtype gating via
             a custom ‘MaskedDense’ layer, enforcing class-conditional output spaces and
             hierarchical consistency, achieving a 94.92% type and 89.62% subtype classification
@@ -51,15 +81,15 @@ export function TimelineComp() {
       title: "August 2024 - November 2024",
       content: (
         <div>
-          <p className="mb-2 text-md text-neutral-800 md:text-3xl dark:text-violet-300 font-bold underline">
+          <p className="mb-2 text-md font-bold text-slate-800 underline md:text-3xl dark:text-violet-300">
             Technical Project Management Intern
           </p>
-          <p className="mb-3 text-md font-normal italic text-neutral-800 md:text-2xl dark:text-neutral-200">
+          <p className="mb-3 text-md font-normal italic text-slate-700 md:text-2xl dark:text-neutral-200">
             <a href="https://avioncloud.in/">
               Avion India <FaLink style={{ display: "inline" }} />
             </a>
           </p>
-          <p className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300 text-justify">
+          <p className="mb-8 text-justify text-sm font-normal text-slate-600 md:text-sm dark:text-neutral-300">
             ➜ Coordinated cross-functional collaboration between operations and sales teams,
             driving on-time task completion & deliverable quality through Agile methodologies,
             shadowing the Scrum Master and leveraging Jira-based project tracking.
@@ -78,15 +108,15 @@ export function TimelineComp() {
       title: "June 2024 - August 2024",
       content: (
         <div>
-          <p className="mb-2 text-md text-neutral-800 md:text-3xl dark:text-violet-300 font-bold underline">
+          <p className="mb-2 text-md font-bold text-slate-800 underline md:text-3xl dark:text-violet-300">
             Artificial Intelligence and Machine Learning Intern
           </p>
-          <p className="mb-3 text-md font-normal italic text-neutral-800 md:text-2xl dark:text-neutral-300">
+          <p className="mb-3 text-md font-normal italic text-slate-700 md:text-2xl dark:text-neutral-300">
             <a href="https://www.linkedin.com/company/tesseract-imaging/posts/?feedView=all">
               JIO Tesseract, Reliance Industries <FaLink style={{ display: "inline" }} />
             </a>
           </p>
-          <p className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300 text-justify">
+          <p className="mb-8 text-justify text-sm font-normal text-slate-600 md:text-sm dark:text-neutral-300">
             ➜ Engineered and optimized AI-driven use cases for smart-glasses equipped with a
             multilingual assistant and hands-free speech-to-speech translation, leveraging a
             pipeline of ML models and LLMs; reduced response times by over 93% for real-time
@@ -113,15 +143,15 @@ export function TimelineComp() {
       title: "June 2023 - August 2023",
       content: (
         <div>
-          <p className="mb-2 text-md text-neutral-800 md:text-3xl dark:text-violet-300 font-bold underline">
+          <p className="mb-2 text-md font-bold text-slate-800 underline md:text-3xl dark:text-violet-300">
             ReactJS Front End Development Intern
           </p>
-          <p className="mb-3 text-md font-normal italic text-neutral-800 md:text-2xl dark:text-neutral-300">
+          <p className="mb-3 text-md font-normal italic text-slate-700 md:text-2xl dark:text-neutral-300">
             <a href="https://jwero.ai/">
               Jwero AI, Tanika Tech <FaLink style={{ display: "inline" }} />
             </a>
           </p>
-          <p className="mb-8 text-sm font-normal text-neutral-800 md:text-sm dark:text-neutral-300 text-justify">
+          <p className="mb-8 text-justify text-sm font-normal text-slate-600 md:text-sm dark:text-neutral-300">
             ➜ Jwero AI is a startup and a Meta Business Partner, focused on automating and
             digitalizing the jewellery industry enabling jewellers to scale globally and prioritize
             customer engagement.

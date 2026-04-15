@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Align `dark:` with next-themes `class="dark"` on `html` (not only OS prefers-color-scheme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100;
+  }
+}
+
 @keyframes spotlight {
   0% {
     opacity: 0;
