@@ -12,6 +12,7 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 import { HiTrophy } from "react-icons/hi2";
 import { FaHandsHelping } from "react-icons/fa";
 import { Volunteering } from "@/components/Volunteering";
+import { ThankYou } from "@/components/ThankYou";
 
 export default function Home() {
   return (
@@ -40,6 +41,8 @@ export default function Home() {
         <Volunteering />
 
         <Achievements/>
+
+        {/* <ThankYou /> */}
 
         <Footer/>
       </div>
