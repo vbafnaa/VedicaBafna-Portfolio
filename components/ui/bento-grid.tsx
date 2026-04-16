@@ -71,8 +71,7 @@ export const BentoGridItem = ({
         "group/bento shadow-input relative row-span-1 overflow-hidden flex flex-col justify-between space-y-5 m-2 rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className,
       )}
-      style={id === 3 ? { background: "rgb(4, 7, 29)" } : undefined}
-    >
+      style={id === 4 ? { background: "rgb(0, 0, 0)" } : id === 3 ? { background: "rgb(4, 7, 29)" } : undefined}    >
       <div className={`${id === 3 && 'flex justify-center'} h-full`}>
       {/* <div className="flex justify-center items-center"> */}
         <div className="">
@@ -103,7 +102,7 @@ export const BentoGridItem = ({
           <div
             className={cn(
               "group-hover/bento:translate-x-2 z-20 font-sans text-sm font-normal md:text-xs lg:text-base dark:font-extralight dark:text-[#c1c2d3]",
-              id === 3
+              id === 3 || id === 4
                 ? "text-neutral-200"
                 : "text-slate-700",
             )}
@@ -113,7 +112,7 @@ export const BentoGridItem = ({
           <div
             className={cn(
               "group-hover/bento:translate-x-2 z-20 flex max-w-96 font-sans text-lg font-bold lg:text-3xl dark:text-neutral-200",
-              id === 3 ? "text-white" : "text-slate-900",
+              id === 3 || id === 4 ? "text-white" : "text-slate-900",
             )}
           >
             {title}
