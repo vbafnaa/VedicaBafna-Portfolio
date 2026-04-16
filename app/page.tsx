@@ -10,18 +10,20 @@ import { BsPersonRaisedHand } from "react-icons/bs";
 import { FaBriefcase } from "react-icons/fa";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { HiTrophy } from "react-icons/hi2";
+import { FaHandsHelping } from "react-icons/fa";
+import { Volunteering } from "@/components/Volunteering";
 
 export default function Home() {
   return (
-    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto bg-slate-50 dark:bg-slate-900 sm:px-10 px-5">
+    <main className="relative mx-auto flex flex-col items-center justify-center overflow-x-hidden bg-slate-50 px-5 dark:bg-slate-900 sm:px-10">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={[
           {name:'Home', link:'/' ,icon:<FaHome/>},
           {name:'About', link:'#about' ,icon:<BsPersonRaisedHand/>},
           {name:'Experiences', link:'#timeline' ,icon:<FaBriefcase/>},
           {name:'Projects', link:'#projects' ,icon:<MdOutlineRocketLaunch/>},
+          {name:'Volunteering', link:'#volunteering' ,icon:<FaHandsHelping/>},
           {name:'Achievements', link:'#achievements' ,icon:<HiTrophy/>},
-          // {name:'Volunteering', link:'#volunteering' ,icon:<FaHome/>},
           // {name:'FunFacts', link:'#funfacts' ,icon:<FaHome/>},
           // {name:'Contact', link:'#contact' ,icon:<FaHome/>},
 
@@ -34,6 +36,8 @@ export default function Home() {
         <TimelineComp/>
 
         <CarouselSlides/>
+
+        <Volunteering />
 
         <Achievements/>
 
